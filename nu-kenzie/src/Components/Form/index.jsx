@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { v4 as uuid } from "uuid";
+import "../Form/index.css";
 
 export function Form({ listTransactions, setListTransactions }) {
   const [description, setDescription] = useState("");
@@ -41,15 +42,17 @@ export function Form({ listTransactions, setListTransactions }) {
           />
           <span>R$</span>
         </div>
-        <label htmlFor="transactionValueType">Tipo de valor</label>
-        <select
-          name="typeOfValue"
-          id="typeOfValue"
-          onChange={(e) => setValueType(e.target.value)}
-        >
-          <option value="Entrada">Entrada</option>
-          <option value="Despesa">Despesa</option>
-        </select>
+        <div className="valueInput__container--selectType">
+          <label htmlFor="transactionValueType">Tipo de valor</label>
+          <select
+            name="typeOfValue"
+            id="typeOfValue"
+            onChange={(e) => setValueType(e.target.value)}
+          >
+            <option value="Entrada">Entrada</option>
+            <option value="Despesa">Despesa</option>
+          </select>
+        </div>
       </div>
       <button type="submit">Inserir Valor</button>
     </form>

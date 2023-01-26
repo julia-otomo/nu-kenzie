@@ -1,6 +1,7 @@
 import { EmptyList } from "../EmptyList";
 import { Form } from "../Form";
 import { Card } from "../Card";
+import "../Dashboard/index.css";
 
 export function Dashboard({
   changeHomePage,
