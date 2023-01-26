@@ -1,4 +1,4 @@
-import logo from "../../assets/home-picture-mobile.svg";
+import logo from "/src/assets/home-picture-mobile.svg";
 import "../HomePage/index.css";
 
 export function HomePage({ changeHomePage }) {
@@ -18,9 +18,7 @@ export function HomePage({ changeHomePage }) {
         <button onClick={goToDashboard}>Iniciar</button>
       </div>
 
-      <div className="homePage__container--picture">
-        <img src={logo} />
-      </div>
+      <div className="homePage__container--picture"></div>
     </div>
   );
 }

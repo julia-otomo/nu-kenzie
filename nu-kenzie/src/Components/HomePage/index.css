@@ -53,6 +53,37 @@
   background-color: var(--color-primary-2);
 }
 
-.homePage__container--picture img {
-  width: 100%;
+.homePage__container--picture {
+  background-image: url("../../assets/home-picture-mobile.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 347px;
+  max-width: 90%;
+  height: 347px;
+}
+
+@media (min-width: 1024px) {
+  .homePage__container {
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  .homePage__container--withoutPicture {
+    padding-left: 6.25rem;
+    width: 27rem;
+    justify-self: flex-start;
+  }
+
+  .homePage__container--withoutPicture button {
+    width: 15.063rem;
+  }
+
+  .homePage__container--picture {
+    background-image: url("../../assets/home-picture-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 593px;
+    height: 593px;
+  }
 }
