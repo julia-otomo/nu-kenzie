@@ -5,7 +5,9 @@ import "../EmptyList/index.css";
 export function EmptyList() {
   return (
     <>
-      <h2>Você ainda não possui nenhum lançamento</h2>
+      <h2 className="empty-list__title">
+        Você ainda não possui nenhum lançamento
+      </h2>
       <ul className="empty__list">
         <li>
           <img src={image} />

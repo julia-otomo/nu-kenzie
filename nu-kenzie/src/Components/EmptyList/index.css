@@ -1,0 +1,31 @@
+.empty-list__title {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--title-3);
+  line-height: var(--line-height-default);
+  margin-bottom: 1.1rem;
+}
+
+.empty__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.empty__list li {
+  max-width: 359px;
+  height: 87.25px;
+  border-left: 3px solid var(--color-grey-2);
+  border-radius: var(--border-radius-default);
+  background-color: var(--dashboard-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  gap: 13px;
+}
+
+.empty__list li img {
+  height: 13px;
+}

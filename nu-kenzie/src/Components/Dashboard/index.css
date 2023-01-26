@@ -58,3 +58,14 @@
   flex-direction: column;
   gap: 1.5rem;
 }
+
+.main__container .transactions__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__container .transactions__container > h3 {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-4);
+  margin-bottom: 1rem;
+}
