@@ -58,3 +58,21 @@
   background-image: url("../../assets/white-trash.svg");
   background-color: var(--color-grey-3);
 }
+
+@media (min-width: 1024px) {
+  .transactions__list li {
+    max-width: 37rem;
+    height: 5.438rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .transactions__list li .transaction__value {
+    flex-direction: row;
+    align-items: center;
+    align-self: flex-start;
+    margin-top: 0.5rem;
+    gap: 5rem;
+  }
+}
