@@ -21,7 +21,8 @@ export function Form({ listTransactions, setListTransactions }) {
 
     if (
       transaction.description === "" ||
-      transaction.value === "" ||
+      transaction.value === 0 ||
+      transaction.value !== Number(transaction.value) ||
       transaction.valueType === ""
     ) {
       return toast.error(
