@@ -1,6 +1,7 @@
 import { EmptyList } from "../EmptyList";
 import { Form } from "../Form";
 import { Card } from "../Card";
+import { List } from "../List";
 import "../Dashboard/index.css";
 
 export function Dashboard({
@@ -33,7 +34,7 @@ export function Dashboard({
             {listTransactions.length === 0 ? (
               <EmptyList />
             ) : (
-              <Card
+              <List
                 listTransactions={listTransactions}
                 setListTransactions={setListTransactions}
               />

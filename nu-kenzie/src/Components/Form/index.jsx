@@ -17,6 +17,16 @@ export function Form({ listTransactions, setListTransactions }) {
       valueType,
     };
 
+    if (
+      transaction.description === "" ||
+      transaction.value === "" ||
+      transaction.valueType === ""
+    ) {
+      return console.log("Preencha todos os campos corretamente");
+    } else if (transaction.valueType === "Despesa") {
+      transaction.value = -transaction.value;
+    }
+
     setListTransactions([...listTransactions, transaction]);
   }
 
