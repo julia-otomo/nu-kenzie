@@ -1,8 +1,8 @@
 import { EmptyList } from "../EmptyList";
 import { Form } from "../Form";
-import { Card } from "../Card";
 import { List } from "../List";
 import "../Dashboard/index.css";
+import { TotalMoney } from "../TotalMoney";
 
 export function Dashboard({
   changeHomePage,
@@ -27,6 +27,10 @@ export function Dashboard({
               listTransactions={listTransactions}
               setListTransactions={setListTransactions}
             />
+
+            {listTransactions.length > 0 ? (
+              <TotalMoney listTransactions={listTransactions} />
+            ) : null}
           </div>
 
           <div className="transactions__container">

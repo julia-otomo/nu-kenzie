@@ -31,7 +31,7 @@ export function Form({ listTransactions, setListTransactions }) {
   }
 
   return (
-    <form onSubmit={createTransaction}>
+    <form onSubmit={createTransaction} className={"form__transaction"}>
       <label htmlFor="transactionDescript">Descrição</label>
       <input
         type="text"

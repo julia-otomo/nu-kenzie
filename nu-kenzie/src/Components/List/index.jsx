@@ -1,4 +1,5 @@
 import { Card } from "../Card";
+import "../List/index.css";
 
 export function List({ listTransactions, setListTransactions }) {
   return (

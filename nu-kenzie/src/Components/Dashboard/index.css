@@ -59,6 +59,12 @@
   gap: 1.5rem;
 }
 
+.main__container .form__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .main__container .transactions__container {
   display: flex;
   flex-direction: column;

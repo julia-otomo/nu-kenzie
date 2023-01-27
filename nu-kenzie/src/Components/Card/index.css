@@ -1,0 +1,60 @@
+.transactions__list li {
+  width: 35rem;
+  max-width: 100%;
+  background-color: var(--color-grey-1);
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  border-radius: var(--border-radius-default);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border-left: 4px solid var(--color-grey-2);
+}
+
+.transactions__list .green__card {
+  border-left: 4px solid var(--color-secondary);
+}
+
+.transactions__list li .transaction__title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.transactions__list li .transaction__title h3 {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-grey-4);
+}
+
+.transactions__list li .transaction__title p {
+  font-size: var(--body-font);
+  color: #343a40;
+}
+
+.transactions__list li .transaction__value {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.transactions__list li .transaction__value > p {
+  font-size: var(--body-font);
+  color: #343a40;
+}
+
+.transactions__list li .transaction__value > button {
+  width: 22px;
+  height: 22px;
+  border: none;
+  border-radius: 3px;
+  background-image: url("../../assets/grey-trash.svg");
+  background-color: var(--color-grey-2);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.transactions__list li .transaction__value > button:hover {
+  background-image: url("../../assets/white-trash.svg");
+  background-color: var(--color-grey-3);
+}

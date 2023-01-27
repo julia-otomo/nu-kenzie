@@ -1,3 +1,5 @@
+import "../Card/index.css";
+
 export function Card({ transaction, listTransactions, setListTransactions }) {
   function removeTransaction(e) {
     let buttonId = e.target.id;
@@ -10,13 +12,13 @@ export function Card({ transaction, listTransactions, setListTransactions }) {
 
   if (transaction.valueType === "Entrada") {
     return (
-      <li key={transaction.id} className={green__card}>
+      <li key={transaction.id} className={"green__card"}>
         <div className="transaction__title">
           <h3>{transaction.description}</h3>
           <p>{transaction.valueType}</p>
         </div>
         <div className="transaction__value">
-          <p>{transaction.value}</p>
+          <p>R${transaction.value},00</p>
           <button onClick={removeTransaction} id={transaction.id}></button>
         </div>
       </li>
@@ -29,7 +31,7 @@ export function Card({ transaction, listTransactions, setListTransactions }) {
           <p>{transaction.valueType}</p>
         </div>
         <div className="transaction__value">
-          <p>{transaction.value}</p>
+          <p> R${transaction.value},00</p>
           <button onClick={removeTransaction} id={transaction.id}></button>
         </div>
       </li>
