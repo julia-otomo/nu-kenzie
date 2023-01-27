@@ -29,3 +29,10 @@
 .empty__list li img {
   height: 13px;
 }
+
+@media (min-width: 1024px) {
+  .empty__list li {
+    min-width: 35rem;
+    max-width: 37rem;
+  }
+}

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { v4 as uuid } from "uuid";
 import "../Form/index.css";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export function Form({ listTransactions, setListTransactions }) {
   const [description, setDescription] = useState("");
@@ -22,7 +24,9 @@ export function Form({ listTransactions, setListTransactions }) {
       transaction.value === "" ||
       transaction.valueType === ""
     ) {
-      return console.log("Preencha todos os campos corretamente");
+      return toast.error(
+        "Por favor, verifique se preencheu corretamente os campos"
+      );
     } else if (transaction.valueType === "Despesa") {
       transaction.value = -transaction.value;
     }
@@ -59,6 +63,7 @@ export function Form({ listTransactions, setListTransactions }) {
             id="typeOfValue"
             onChange={(e) => setValueType(e.target.value)}
           >
+            <option value="">Selecione o tipo de transação</option>
             <option value="Entrada">Entrada</option>
             <option value="Despesa">Despesa</option>
           </select>

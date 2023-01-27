@@ -27,7 +27,7 @@
 
 .form__transaction > input:focus {
   background-color: #fff;
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-grey-4);
 }
 .form__transaction > p {
   font-size: var(--body-font);
@@ -70,7 +70,7 @@
   .valueInput__container--addValueSymbol
   > input:focus {
   background-color: #fff;
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-grey-4);
 }
 
 .form__transaction
@@ -112,6 +112,14 @@
   outline: none;
   color: var(--color-grey-4);
   cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.form__transaction
+  .valueInput__container
+  .valueInput__container--selectType
+  > select:focus {
+  border: 2px solid var(--color-grey-4);
 }
 
 .form__transaction > button {
