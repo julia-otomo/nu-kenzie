@@ -10,6 +10,7 @@ export function List({ listTransactions, setListTransactions }) {
             transaction={transaction}
             listTransactions={listTransactions}
             setListTransactions={setListTransactions}
+            key={transaction.id}
           />
         );
       })}

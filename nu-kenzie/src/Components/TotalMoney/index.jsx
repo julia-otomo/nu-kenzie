@@ -5,8 +5,6 @@ export function TotalMoney({ listTransactions }) {
     return Number(accumulator) + Number(currentValue.value);
   }, 0);
 
-  console.log(listTransactions);
-
   return (
     <div className="totalValue__container">
       <div className="totalValue__container--description">

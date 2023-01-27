@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export function Form({ listTransactions, setListTransactions }) {
   const [description, setDescription] = useState("");
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState(0);
   const [valueType, setValueType] = useState("");
 
   function createTransaction(e) {
@@ -22,7 +22,6 @@ export function Form({ listTransactions, setListTransactions }) {
     if (
       transaction.description === "" ||
       transaction.value === 0 ||
-      transaction.value !== Number(transaction.value) ||
       transaction.valueType === ""
     ) {
       return toast.error(
